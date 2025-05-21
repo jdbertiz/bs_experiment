@@ -1,29 +1,304 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*form label {
+  color: #000 !important;
+  position: static !important;
+  top: unset !important;
+  left: unset !important;
+  display: block;
+  -webkit-transition: unset !important;
+  transition: unset !important;
+}*/
+
+/*img{
+  height:auto !important;
+}*/
+
+header {
     
+    background: url("https://ts.accenture.com/sites/bspace.ciostage/Pages/brand_assets/images/brand-assets-page-header-bkg.jpg") no-repeat;
 }
 
 @font-face {
     font-family: 'GraphikCustom';
-    src: url();
-}
-
-@font-face {
-    font-family: 'GraphikCustom';
-    src: url('/sites/bspace.ciostage/assets/fonts/Graphik-Regular-App.ttf') format('truetype'),;
+    src: url('https://ts.accenture.com/sites/bspace.ciostage/assets/fonts/Graphik-Regular-App.ttf') format('truetype'),;
     font-weight:normal;
     font-style:normal
 }
 
 @font-face {
     font-family: 'SectraCustom';
-    src: url('/sites/bspace.ciostage/assets/fonts/GT-Sectra-Display-Regular.ttf') format('truetype');
+    src: url('https://ts.accenture.com/sites/bspace.ciostage/assets/fonts/GT-Sectra-Display-Regular.ttf') format('truetype');
     font-weight:normal;
     font-style:normal
 }
+.row{
+  margin-left:0 !important;
+  margin-right:0 !important;
+  }
+.tab-label{
+  color: #000 !important;
+    position: static !important;
+    top: unset !important;
+    left: unset !important;
+    display: block;
+    -webkit-transition: unset !important;
+    transition: unset !important;
+}
+@media (max-width: 1280px) {
+  .img-zoom img {
+    height: 100% !important;
+  }
+  .img-zoom .image-container {
+    width: 100% !important;
+  }
+  .four-col .four-zoom{
+    display: table !important;
+  }
+  .four-zoom .four-col-item{
+    width: 40%;
+    display: table-cell !important;
+    float: left !important;
+  }
+  .five-col .five-zoom{
+    display: table !important;
+  }
+  .five-zoom .five-col-item{
+    width: 30% !important;
+    float: left !important;
+    display: table-cell !important;
+  }
+  .five-zoom .five-col-item .image{
+    margin-bottom: 2rem !important;
+  }
+/*  .image.with-margin {
+    width: calc(100% - 2rem - 2rem);
+    margin: 0 2rem 1rem;
+  }*/
+}
+@media (max-width: 960px) {
+  .img-zoom img {
+    height: 100% !important;
+  }
+  .img-zoom .image-container {
+    width: 100% !important;
+  }
+  .four-zoom .four-col-item{
+    width: 100%;
+  }
+  .five-zoom .five-col-item{
+    width: 100% !important;
+    float: left !important;
+  }
+  .img-zoom .with-margin {
+    width: calc(100% - 2rem - 2rem);
+    margin: 0 2rem 1rem;
+  }
+}
 
+
+
+.audioCon{
+  width: 100%;
+  margin: 2.4rem 0rem 2.4rem 6rem;
+}
+
+@media (max-width: 850px) {
+  .audioCon {
+    margin: 0rem !important;
+  }
+  .audio_wrapper{
+    width: 90% !important;
+  }
+  .audioIcon{
+    width: 7% !important;
+  }
+  .btn_audio{
+    background-size: 50% !important;
+    margin: 0.5rem 0rem 0rem 1.8rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .audioIcon{
+    width: 6% !important;
+  }
+
+  .audio_wrapper{
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .audioCon {
+    margin: 2.4rem 9rem;
+  }
+  .btn_audio{
+    margin: 0rem 0rem 0rem 0.8rem;
+  }
+  .audio_mute img{
+    margin-top: 0.6rem;
+  }
+}
+
+audio:focus{
+    outline:none;
+    color: #a100ff;
+}
+
+.audio_player{
+  width: 20%;
+}
+
+.audio_El{
+    width: 100%;
+}
+
+.audio_wrapper{
+    height: 3.5rem;
+    width: 40%;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.audioIcon{
+    width: 4%;
+    float: left;
+}
+
+.audioIcon img{
+    height: 35px;
+}
+
+.btn_audio{
+    background: #ccc;
+    background: url("https://ts.accenture.com/sites/bspace.ciostage/Pages/brand_typography/images/Play.png") no-repeat;
+    background-size: 58%;
+    width:  100%;
+    margin: 0.4rem 0rem 0rem 0.8rem;;
+    height: 100%;
+    cursor: pointer;
+}
+
+.audio_progress{
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: unset;
+    cursor: pointer;
+}
+
+.audio_time{
+    font-size: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 35%;
+    line-height: 30px;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+.audio_mute{
+    width: 20%;
+    cursor: pointer;
+}
+
+.audio_mute img{
+    width: 50%;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+}
+
+.audio_slide{
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #a100ff;
+}
+
+.audio_fill{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #a100ff;
+}
+
+.audio_download{
+    width: 100%;
+    margin: 2.4rem 0rem 2.4rem 0rem;
+}
+
+.audio_downloadCon{
+    width: 35%;
+    float: left;
+}
+
+.audio_downloadLink{
+    display: inline-flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.audio_downloadIcon{
+    stroke: #a100ff;
+    position: relative;
+    right: 0.05rem;
+}
+
+.audio_downloadLink:hover, .audio_downloadLink:active {
+ background: rgb(161, 0, 255); 
+}
+
+.audio_downloadLink:hover svg, .audio_downloadLink:active svg 
+{ 
+  stroke: rgb(255, 255, 255); 
+}
+.bodyChange{
+    overflow: hidden;
+}
+
+.modal-open, .modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom {
+            margin-right: 0;
+}
+.modalTG{
+	position: fixed;
+	bottom: auto;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	background-clip: padding-box;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4050;
+  width: auto;
+  height: auto;
+}
+  
+.modal-backdrop{
+    z-index: 4040;
+    opacity: 1 !important;
+
+}
+.modal-header {
+    padding: 15px 15px 0 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 15px 0 15px;
+}
+.modal.container {
+    max-width: none;
+}
 
 /*************LEFTPART**************/
 
@@ -49,10 +324,13 @@
     margin-bottom: 75px;
 }
 
-.left-typography h4 {
+.left-typography h4, .golden-ratio h4 {
     margin-bottom: 35px;
 }
 
+.left-typography.golden-ratio {
+	margin-top: 35px;
+}
 /*************RIGHTPART**************/
 
 .right-typography {
@@ -116,6 +394,13 @@
     margin-top:95px;
 }
 
+.grid-six-col {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
 
 /******SUBTITUTE COMPONENT*******/
 .substitute{
@@ -171,15 +456,15 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-h4{
+.typography-section h4{
     font-size: 45px;
 }
 
-h5{
+.typography-section h5,.golden-ratio h5 {
     font-size:24px;
 }
 
-h6{
+.typography-section h6{
     font-size:16px;
 }
 
@@ -189,6 +474,7 @@ h6{
     color:RGB(161, 0, 255);
     display:flex;
     flex-direction: row;
+    margin-bottom: 15px;
 }
 
 .note p{
@@ -197,6 +483,7 @@ h6{
 
 .note i{
     padding: 2px 1px 1px 0px;
+    
 }
 
 #typo-title{
@@ -204,9 +491,13 @@ h6{
 }
 
 .graphik{
-    font-family: 'GraphikCustom', sans-serif;
+    font-family: 'GraphikCustom', sans-serif !important;
 }
 
 .sectra{
-    font-family: 'SectraCustom', sans-serif;
+    font-family: 'SectraCustom', sans-serif !important;
+}
+
+.golden-ratio .note-section {
+	margin-top: 75px
 }
