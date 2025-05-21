@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'GraphikCustom';
+    src: url();
+}
+
+@font-face {
+    font-family: 'GraphikCustom';
+    src: url('/sites/bspace.ciostage/assets/fonts/Graphik-Regular-App.ttf') format('truetype'),;
+    font-weight:normal;
+    font-style:normal
+}
+
+@font-face {
+    font-family: 'SectraCustom';
+    src: url('/sites/bspace.ciostage/assets/fonts/GT-Sectra-Display-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal
+}
+
+
+/*************LEFTPART**************/
+
+.typography-section{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    height:120vh;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.typography-section p{
+    font-size: 13px;
+}
+
+.left-typography {
+    background-color: black;
+    color:white;
+    padding: 10px 45px 45px 45px;
+}
+
+.left-typography p{
+    margin-bottom: 75px;
+}
+
+.left-typography h4 {
+    margin-bottom: 35px;
+}
+
+/*************RIGHTPART**************/
+
+.right-typography {
+
+}
+
+.right-top-headers {
+    display: grid;
+    grid-template-columns:40% 60%;
+    padding-top:5px;
+    padding-left:45px;
+}
+
+/**************Containers***************/
+
+.reusable-section {
+    display: grid;
+    grid-template-columns:40% 60%;
+}
+
+.right-details-container{
+    margin-top:75px;
+    padding-left:45px;
+}
+
+.reusable-section h6{
+    margin-bottom: 15px;
+    font-weight:normal;
+}
+
+.reusable-section h5{
+    margin-bottom: 20px;
+}
+
+.font-title {
+    padding-right:65px;
+}
+
+.font-details {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-weight, .row-use-for, .row-example{
+    padding:12px;
+}
+.header-typo {
+    font-weight: normal;
+    padding:0px 12px 12px 12px;
+    font-size: 11px;
+}
+.row-weight, .row-use-for, .row-example {
+    border-top: 1px solid black;
+}
+.row-use-for, .row-example {
+    font-size: 9px;
+}
+
+
+.b-section {
+    margin-top:95px;
+}
+
+
+/******SUBTITUTE COMPONENT*******/
+.substitute{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.substitute .left-typography{
+    color:black !important;
+    background-color: white !important;
+}
+
+.substitute .font-details{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1.3fr;
+}
+
+.substitute .right-details-container{
+    margin-top:75px;
+    padding-left:35px;
+   
+}
+
+
+
+.substitute .reusable-section {
+    display: grid;
+    grid-template-columns: 85%;
+    margin-bottom:60px;
+
+}
+
+.languages-example{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.chinese, .arabic{
+    margin-top:15px
+}
+
+.language-semi-bold{
+    font-weight:bold;
+}
+
+.language-bold{
+    font-weight:bolder;
+}
+
+.arial{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    font-size: 45px;
+}
+
+h5{
+    font-size:24px;
+}
+
+h6{
+    font-size:16px;
+}
+
+
+.note {
+    padding-right:10px;
+    color:RGB(161, 0, 255);
+    display:flex;
+    flex-direction: row;
+}
+
+.note p{
+    font-size:10px;
+}
+
+.note i{
+    padding: 2px 1px 1px 0px;
+}
+
+#typo-title{
+    color:white !important;
+}
+
+.graphik{
+    font-family: 'GraphikCustom', sans-serif;
+}
+
+.sectra{
+    font-family: 'SectraCustom', sans-serif;
+}
